@@ -85,12 +85,6 @@
             <version>${kotlin.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.rakuten.linkconsumer</groupId>
-            <artifactId>rhapsody-framework</artifactId>
-            <version>0.0.24-SNAPSHOT</version>
-            <type>pom</type>
-        </dependency>
-        <dependency>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
             <version>2.22.2</version>
