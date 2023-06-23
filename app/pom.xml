@@ -18,6 +18,7 @@
         <allure.version>2.20.1</allure.version>
         <aspectj.version>1.9.19</aspectj.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.example</groupId>
@@ -41,7 +42,6 @@
             <version>${aspectj.version}</version>
         </dependency>
     </dependencies>
-
 
     <build>
         <plugins>
@@ -91,7 +91,7 @@
             <plugin>
                 <groupId>dev.aspectj</groupId>
                 <artifactId>aspectj-maven-plugin</artifactId>
-                <version>1.13</version>
+                <version>1.13.1</version>
                 <dependencies>
                     <dependency>
                         <groupId>org.aspectj</groupId>
@@ -110,7 +110,7 @@
                     </dependency>
                 </dependencies>
                 <configuration>
-                    <complianceLevel>${java.version}</complianceLevel>
+                    <complianceLevel>${maven.compiler.target}</complianceLevel>
                     <showWeaveInfo>true</showWeaveInfo>
                     <verbose>true</verbose>
                     <Xlint>ignore</Xlint>
