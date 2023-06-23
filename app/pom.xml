@@ -98,16 +98,6 @@
                         <artifactId>aspectjtools</artifactId>
                         <version>${aspectj.version}</version>
                     </dependency>
-                    <dependency>
-                        <groupId>io.qameta.allure</groupId>
-                        <artifactId>allure-java-commons</artifactId>
-                        <version>${allure.version}</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>io.qameta.allure</groupId>
-                        <artifactId>allure-testng</artifactId>
-                        <version>${allure.version}</version>
-                    </dependency>
                 </dependencies>
                 <configuration>
                     <complianceLevel>${maven.compiler.target}</complianceLevel>
