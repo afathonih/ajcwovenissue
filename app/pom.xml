@@ -30,11 +30,13 @@
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-testng</artifactId>
             <version>${allure.version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-java-commons</artifactId>
             <version>${allure.version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.aspectj</groupId>
@@ -114,31 +116,17 @@
                             <groupId>io.qameta.allure</groupId>
                             <artifactId>allure-java-commons</artifactId>
                         </aspectLibrary>
-                        <aspectLibrary>
-                            <groupId>io.qameta.allure</groupId>
-                            <artifactId>allure-testng</artifactId>
-                        </aspectLibrary>
                     </aspectLibraries>
                     <weaveDirectories>
                         <weaveDirectory>${project.build.outputDirectory}</weaveDirectory>
                         <weaveDirectory>${project.build.testOutputDirectory}</weaveDirectory>
                         <weaveDirectory>${project.build.directory}/generated-sources/ksp</weaveDirectory>
                     </weaveDirectories>
-                    <weaveDependencies>
-                        <weaveDependency>
-                            <groupId>io.qameta.allure</groupId>
-                            <artifactId>allure-testng</artifactId>
-                        </weaveDependency>
-                        <weaveDependency>
-                            <groupId>io.qameta.allure</groupId>
-                            <artifactId>allure-java-commons</artifactId>
-                        </weaveDependency>
-                    </weaveDependencies>
                 </configuration>
                 <executions>
                     <execution>
                         <goals>
-                            <goal>compile</goal>
+                            <!--<goal>compile</goal>-->
                             <goal>test-compile</goal>
                         </goals>
                     </execution>
