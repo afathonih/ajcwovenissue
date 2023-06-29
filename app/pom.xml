@@ -15,7 +15,7 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <allure.version>2.22.2</allure.version>
+        <allure.version>2.20.1</allure.version>
         <aspectj.version>1.9.19</aspectj.version>
     </properties>
     <dependencies>
